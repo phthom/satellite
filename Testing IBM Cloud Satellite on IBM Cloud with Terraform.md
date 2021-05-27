@@ -142,7 +142,7 @@ https://releases.hashicorp.com/terraform/
 
 File name : **versions.tf** 
 
-``` json
+``` terraform
  terraform {
    required_providers {
       ibm = {
@@ -206,7 +206,7 @@ Create a new file called `provider.tf`in the same directory with all your 3 cred
 
 File Name: **provider.tf**  (below an example of the content)
 
-``` json
+``` terr
 provider "ibm" {
   ibmcloud_api_key = "kjsefgkqlh8987bkefkezkfkerhgureh"  
   iaas_classic_username = "IBM7780987"
@@ -278,7 +278,7 @@ Now let's create a new file for the VM definitions:
 
 File Name: **main.tf**
 
-``` json
+``` terr
 resource "ibm_compute_vm_instance" "vm" {
       count                       = var.VM["nodes"]
       datacenter                  = var.datacenter
@@ -320,7 +320,7 @@ Then create the variables.tf file that is used to define all the parameters that
 
 File Name: **variables.tf**
 
-```json
+```terraform
 variable datacenter { default = "wdc07" }
 variable prefix     { default = "nicesatvm" }
 variable flavor     { default = "B1_4X16X100" }
