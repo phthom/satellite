@@ -1,2 +1,4 @@
-# satellite
-Consume a common set of cloud services including toolchains, databases, and AI in any location. The IBM Cloud Satellite managed distributed cloud solution delivers cloud services, APIs, access policies, security controls and compliance.
+# Testing IBM Cloud Satellite on IBM Cloud with Terraform
+
+![image-20210410142755775-8057675](images/image-20210410142755775-8057675.png)
+
